@@ -4,10 +4,13 @@
 {
 	--logo: url("assets/full_logo_with_tagline.svg");
 	--bg-pattern: url("assets/bg.png");
-	--white: #fafffd;
+	--white: #f1fbfe;
+	--light-blue: #eef9fe;
+	--blue: #37abc8;
+	--blue2: #c3e5fa;
 	--black: #1d2021;
-	--light: 300;
-	--medium: 500;
+    --light: 300;
+    --medium: 500;
 }
 
 html, body
@@ -20,53 +23,224 @@ html, body
 body
 {
 	display: flex;
+	flex-direction: column; /* Display in rows */
 	background-color: var(--white);
 	background-image: var(--bg-pattern);
 	color: var(--black);
 	font-family: "Barlow", sans-serif;
-	font-size: 20pt;
-	font-weight: var(--medium);
+	font-size: 16pt;
+	font-weight: var(--light);
 	line-height: 1.4em;
 }
 
 div
 {
 	display: flex;
-	flex-direction: column;
 }
 
-p
-{
-	margin: 0.5em;
-	text-align: center
-}
-
-div.content
+div.header
 {
 	justify-content: center;
-	margin: auto;
+	padding: 3em;
 }
 
-div.content div.construction
+div.header div.header_container
 {
+	flex-wrap: wrap;
 	width: 100%;
 }
 
-div.content div.construction img
+div.header div.header_container div.logo
 {
-	max-width: 80%;
-	max-height: 51px;
-	margin: auto;
+	justify-content: center;
+	width: 100%;
 }
 
-div.content div.logo
+div.header div.header_container div.logo img.logo
 {
+	height: 150px;
+	content: var(--logo);
+}
+
+div.wrapper
+{
+	background-color: var(--white);
+	flex-direction: column; /* Display in rows */
+	align-items: center;
+	flex-grow: 1;
+	padding: 3em;
+	flex: 1 0 auto;
+}
+
+div.wrapper *
+{
+	max-width: 800px;
+}
+
+div.wrapper div
+{
+	flex-direction: column;
+}
+
+div.wrapper div p
+{
+	margin: 0.2em;
+}
+
+b
+{
+	font-weight: var(--medium);
+}
+
+a.verihash_logo
+{
+	width: 200px;
+	margin: 0.25em 0 0 0.25em;
+}
+
+div.wrapper a.verihash_logo:hover
+{
+	border-bottom: 0px;
+}
+
+a.verihash_logo img
+{
+	width: 200px;
+}
+
+div.wrapper div p.bold, div.special
+{
+	background-color: var(--blue2);
+	padding: 1em;
+	border-radius: 0.5em;
+	font-weight: var(--medium);
+	margin: 1em 0;
+	text-align: center;
+}
+
+div.special p.left
+{
+	font-weight: var(--light);
+	text-align: left;
+}
+
+div.wrapper a
+{
+	color: var(--blue);
+	font-weight: var(--medium);
+	text-decoration: none;
+}
+
+div.wrapper a:hover
+{
+	text-decoration: none;
+	border-bottom: 2px solid var(--blue);
+}
+
+ul
+{
+	list-style: none; /* Remove default bullets */
+	margin: 0 0 0.5em 0;
+}
+ 
+ul li
+{
+	margin: 0.5em 0 0 0;
+}
+
+ul li::before
+{
+	content: "\279c";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: var(--blue); /* Change the color */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1.5em; /* Also needed for space (tweak if needed) */
+	margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+}
+
+div h2:first-of-type
+{
+	margin: 0 0 1.5em 0;
+}
+
+div.tagline
+{
+	font-size: 22pt;
+	justify-content: center;
+	margin: 1em;
+}
+
+div.footer
+{
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 3em;
+}
+
+div.footer div a
+{
+	color: var(--blue);
+	margin: 0.25em;
+	text-align: center;
+	font-weight: var(--medium);
+	font-size: 20pt;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
 }
 
-div.content div.logo img.logo
+div.footer div a:hover
 {
-	max-width: 80%;
-	height: 256px;
-	content: var(--logo);
+	color: var(--black);
+}
+
+div.footer div a.logo:hover
+{
+	color: var(--blue);
+}
+
+div.footer div a.logo img
+{
+	height: 100px;
+	margin-right: 150px;
+	content: url("assets/logo_with_tagline.svg");
+}
+
+div.footer div div a img
+{
+	height: 1.1em;
+	margin-right: 0.5em;
+	background-color: var(--blue);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+div.footer div a.email img
+{
+	content: url("assets/email.svg");
+}
+
+div.footer div a.email:hover img
+{
+	content: url("assets/email-black.svg");
+}
+
+div.footer div a.discord img
+{
+	content: url("assets/discord.svg");
+}
+
+div.footer div a.discord:hover img
+{
+	content: url("assets/discord-black.svg");
+}
+
+div.copyright
+{
+	font-size: 12pt;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5em 0 2em 0;
 }

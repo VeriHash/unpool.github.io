@@ -7,44 +7,11 @@
    viewBox="0 0 94.020607 94.020592"
    version="1.1"
    id="svg22737"
-   sodipodi:docname="logo_square.svg"
-   inkscape:export-filename="/home/dgleason/git/unpool_website/assets/favicon-180.png"
-   inkscape:export-xdpi="48.627636"
-   inkscape:export-ydpi="48.627636"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview22739"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     lock-margins="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="1.3950758"
-     inkscape:cx="175.6177"
-     inkscape:cy="161.28156"
-     inkscape:window-width="1693"
-     inkscape:window-height="1409"
-     inkscape:window-x="1737"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
   <defs
      id="defs22734" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-62.2743,-113.78223)">
     <rect
@@ -53,43 +20,25 @@
        width="94.020592"
        height="94.020592"
        x="62.274311"
-       y="113.78223"
-       inkscape:export-filename="/home/dgleason/git/unpool_website/assets/favicon-16.png"
-       inkscape:export-xdpi="4.3224564"
-       inkscape:export-ydpi="4.3224564" />
+       y="113.78223" />
     <path
        id="rect24142"
        style="fill:#37abc8;fill-opacity:1;stroke-width:1.71724;stroke-linecap:round;stroke-linejoin:round"
-       d="M 109.28488,162.81383 A 40.295507,40.362145 0 0 1 75.705521,180.8949 40.295507,40.362145 0 0 1 62.2743,178.47645 v 29.32637 h 94.02061 v -29.32637 a 40.295507,40.362145 0 0 1 -13.43017,2.41845 40.295507,40.362145 0 0 1 -33.57986,-18.08107 z"
-       inkscape:export-filename="/home/dgleason/git/unpool_website/assets/favicon-16.png"
-       inkscape:export-xdpi="4.3224564"
-       inkscape:export-ydpi="4.3224564" />
-    <text
-       xml:space="preserve"
-       style="font-size:105.832px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:2.64582px;stroke-width:0.292778"
-       x="71.872925"
-       y="197.9655"
+       d="M 109.28488,162.81383 A 40.295507,40.362145 0 0 1 75.705521,180.8949 40.295507,40.362145 0 0 1 62.2743,178.47645 v 29.32637 h 94.02061 v -29.32637 a 40.295507,40.362145 0 0 1 -13.43017,2.41845 40.295507,40.362145 0 0 1 -33.57986,-18.08107 z" />
+    <g
+       aria-label="U"
        id="text24152"
-       inkscape:export-filename="/home/dgleason/git/unpool_website/assets/favicon-16.png"
-       inkscape:export-xdpi="4.3224564"
-       inkscape:export-ydpi="4.3224564"><tspan
-         sodipodi:role="line"
-         id="tspan24150"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:105.832px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';stroke-width:0.292778"
-         x="71.872925"
-         y="197.9655"><tspan
-           style="letter-spacing:5.29164px;stroke-width:0.292778"
-           id="tspan24146">U</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:92.6037px;font-family:Barlow;-inkscape-font-specification:'Barlow Semi-Bold';stroke-width:0.292778"
-           id="tspan24148" /></tspan></text>
+       style="font-size:105.832px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:2.64582px;stroke-width:0.292778">
+      <path
+         d="m 109.01996,199.44715 q -7.72574,0 -13.334835,-2.11664 -5.609096,-2.22247 -9.313216,-6.03243 -3.598288,-3.91578 -5.397432,-9.20738 -1.693312,-5.39743 -1.693312,-11.85318 v -45.6136 h 16.509792 v 44.23778 q 0,4.44494 0.952488,7.6199 1.05832,3.06913 2.751632,5.07994 1.799143,1.90498 4.233283,2.75163 2.53997,0.84666 5.50326,0.84666 6.03243,0 9.73655,-3.70412 3.80995,-3.70412 3.80995,-12.59401 v -44.23778 h 16.50979 v 45.6136 q 0,6.45575 -1.79914,11.85318 -1.79915,5.39743 -5.50327,9.31322 -3.70412,3.80995 -9.41905,5.92659 -5.71492,2.11664 -13.54649,2.11664 z"
+         style="letter-spacing:5.29164px"
+         id="path829" />
+    </g>
     <g
        aria-label="U"
        id="g24156"
        style="font-size:105.833px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.292779"
-       transform="translate(-103.9599,-295.02947)"
-       inkscape:export-filename="/home/dgleason/git/unpool_website/assets/favicon-16.png"
-       inkscape:export-xdpi="4.3224564"
-       inkscape:export-ydpi="4.3224564">
+       transform="translate(-103.9599,-295.02947)">
       <path
          id="path24154"
          style="font-weight:bold;-inkscape-font-specification:'Ubuntu Bold';fill:#ffffff;stroke-width:1.10657"
