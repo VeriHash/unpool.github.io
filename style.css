@@ -190,6 +190,11 @@ div.footer div a
 	align-items: center;
 }
 
+div.nowrap
+{
+	white-space: nowrap;
+}
+
 div.footer div a:hover
 {
 	color: var(--black);
