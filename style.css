@@ -7,8 +7,10 @@
 	--white: #f1fbfe;
 	--light-blue: #eef9fe;
 	--blue: #37abc8;
-	--blue2: #c3e5fa;
-	--black: #1d2021;
+	--black: #0b090b;
+	--yellow: #faa916;
+	--grey: #6d676e;
+	--light-grey: #edefef;
     --light: 300;
     --medium: 500;
 }
@@ -24,8 +26,7 @@ body
 {
 	display: flex;
 	flex-direction: column; /* Display in rows */
-	background-color: var(--white);
-	background-image: var(--bg-pattern);
+	background-color: var(--light-grey);
 	color: var(--black);
 	font-family: "Barlow", sans-serif;
 	font-size: 16pt;
@@ -41,7 +42,10 @@ div
 div.header
 {
 	justify-content: center;
-	padding: 3em;
+	padding: 2em 1em 3em 1em;
+	background-image: url("assets/waves/blue-top.svg");
+	background-position: bottom;
+	background-repeat: repeat-x;
 }
 
 div.header div.header_container
@@ -58,17 +62,20 @@ div.header div.header_container div.logo
 
 div.header div.header_container div.logo img.logo
 {
-	height: 150px;
+	max-width: 450px;
+	width: 100%;
 	content: var(--logo);
 }
 
 div.wrapper
 {
-	background-color: var(--white);
+	background-image: url("assets/waves/blue-bottom.svg"), url("assets/waves/light-grey-top.svg"), url("assets/bg.png");
+	background-position: top, bottom, top;
+	background-repeat: repeat-x, repeat-x, repeat;
 	flex-direction: column; /* Display in rows */
 	align-items: center;
 	flex-grow: 1;
-	padding: 3em;
+	padding: 4em 1em;
 	flex: 1 0 auto;
 }
 
@@ -108,9 +115,9 @@ a.verihash_logo img
 	width: 200px;
 }
 
-div.wrapper div p.bold, div.special
+div.wrapper div.yellow_box
 {
-	background-color: var(--blue2);
+	background-color: var(--yellow);
 	padding: 1em;
 	border-radius: 0.5em;
 	font-weight: var(--medium);
@@ -118,7 +125,20 @@ div.wrapper div p.bold, div.special
 	text-align: center;
 }
 
-div.special p.left
+div.wrapper div.yellow_box a
+{
+	color: var(--white);
+	font-weight: var(--medium);
+	text-decoration: none;
+}
+
+div.wrapper div.yellow_box a:hover
+{
+	text-decoration: none;
+	border-bottom: 2px solid var(--white);
+}
+
+div.wrapper div.yellow_box p.left
 {
 	font-weight: var(--light);
 	text-align: left;
@@ -169,15 +189,21 @@ div.tagline
 	margin: 1em;
 }
 
+div.nowrap
+{
+	white-space: nowrap;
+}
+
 div.footer
 {
+	background-color: var(--light-grey);
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 3em;
+	padding-top: 2em;
 }
 
-div.footer div a
+div.footer > div a
 {
 	color: var(--blue);
 	margin: 0.25em;
@@ -190,62 +216,70 @@ div.footer div a
 	align-items: center;
 }
 
-div.nowrap
+div.footer > div
 {
-	white-space: nowrap;
+	max-width: 800px;
+	width: 100%;
+	flex-direction: rows;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-div.footer div a:hover
+div.footer > div div.links
+{
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+div.footer > div div.links a:hover
 {
 	color: var(--black);
 }
 
-div.footer div a.logo:hover
+div.footer > div a.logo img
 {
-	color: var(--blue);
-}
-
-div.footer div a.logo img
-{
-	height: 100px;
-	margin-right: 150px;
+	width: 100%;
+	max-width: 275px;
 	content: url("assets/logo_with_tagline.svg");
+	margin-bottom: 1em;
 }
 
-div.footer div div a img
+div.footer > div div.links a img
 {
 	height: 1.1em;
-	margin-right: 0.5em;
+	margin: 0 0.5em 0 1em;
 	background-color: var(--blue);
 	padding: 10px;
 	border-radius: 10px;
 }
 
-div.footer div a.email img
+div.footer > div div.links a.email img
 {
-	content: url("assets/email.svg");
+	content: url("assets/email-white.svg");
 }
 
-div.footer div a.email:hover img
+div.footer > div div.links a.email:hover img
 {
 	content: url("assets/email-black.svg");
 }
 
-div.footer div a.discord img
+div.footer > div div.links a.discord img
 {
-	content: url("assets/discord.svg");
+	content: url("assets/discord-white.svg");
 }
 
-div.footer div a.discord:hover img
+div.footer > div div.links a.discord:hover img
 {
 	content: url("assets/discord-black.svg");
 }
 
 div.copyright
 {
+	background-color: var(--light-grey);
 	font-size: 12pt;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	padding: 1.5em 0 2em 0;
+	padding: 0 0 1.5em 0;
 }
