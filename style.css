@@ -209,7 +209,7 @@ div.footer > div a
 	margin: 0.25em;
 	text-align: center;
 	font-weight: var(--medium);
-	font-size: 20pt;
+	font-size: 18pt;
 	text-decoration: none;
 	display: flex;
 	flex-direction: row;
@@ -240,14 +240,14 @@ div.footer > div div.links a:hover
 div.footer > div a.logo img
 {
 	width: 100%;
-	max-width: 275px;
+	max-width: 375px;
 	content: url("assets/logo_with_tagline.svg");
 	margin-bottom: 1em;
 }
 
 div.footer > div div.links a img
 {
-	height: 1.1em;
+	height: 0.8em;
 	margin: 0 0.5em 0 1em;
 	background-color: var(--blue);
 	padding: 10px;
@@ -272,6 +272,26 @@ div.footer > div div.links a.discord img
 div.footer > div div.links a.discord:hover img
 {
 	content: url("assets/discord-black.svg");
+}
+
+div.footer > div div.links a.reddit img
+{
+	content: url("assets/reddit-white.svg");
+}
+
+div.footer > div div.links a.reddit:hover img
+{
+	content: url("assets/reddit-black.svg");
+}
+
+div.footer > div div.links a.twitter img
+{
+	content: url("assets/twitter-white.svg");
+}
+
+div.footer > div div.links a.twitter:hover img
+{
+	content: url("assets/twitter-black.svg");
 }
 
 div.copyright
